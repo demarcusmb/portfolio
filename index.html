@@ -45,11 +45,39 @@
         <div class="section s3">
             <div>
                 <h1> My Projects </h1>
-                <div class="slide"></div>
-                <div class="slide"></div>
-                <div class="slide"></div>
-                <div class="slide"></div>
-                <div class="slide"></div>
+                <div class="slide">
+                    <h2>Genshin Character Sheet</h2>
+                    <img src="/images/genshin.png" />
+                    <br />
+                    <p>
+                        This app pulls from a third party api to display character information for characters in Genshin
+                        Impact
+                    </p>
+                </div>
+                <div class="slide">
+                    <h2>GameShop</h2>
+                    <img src="/images/shop.png">
+                    <br />
+                    <p>
+                        This app displays the games and merchandise within a MongoDB database
+                    </p>
+                </div>
+                <div class="slide">
+                    <h2>VirtualMall</h2>
+                    <img src="/images/vmall.png">
+                    <br />
+                    <p>
+                        This app displays the stores and each product within the different stores
+                    </p>
+                </div>
+                <div class="slide">
+                    <h2>EmployeeDisplay</h2>
+                    <img src="/images/employee.png">
+                    <br />
+                    <p>
+                        This app displays the different employees and different coding languages that they know
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -65,7 +93,7 @@
                 <h1> Contact Information </h1>
                 <br />
                 <form onsubmit="sendEmail(); reset(); return false;"">
-                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type=" text" id="name" placeholder="Your Name" required>
                     <input type="email" id="email" placeholder="Your Email" required>
                     <input type="text" id="subject" placeholder="Subject" required>
                     <textarea id="message" rows="4" placeholder="Message"></textarea>
@@ -81,7 +109,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         new fullpage('#fullPage', {
-            autoScrolling: true
         })
     </script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
