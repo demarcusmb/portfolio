@@ -90,7 +90,7 @@
             Email.send({
                 SecureToken: "8e943c2f-fefe-487a-b28e-9dc7896ce821",
                 To: 'demarcus.m.brown@gmail.com',
-                From: document.getElementById("email".value),
+                From: document.getElementById("email").value,
                 Subject: document.getElementById("subject").value,
                 Body: document.getElementById("message").value
             }).then(
