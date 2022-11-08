@@ -1,10 +1,65 @@
-
-h1{
-    color: rgb(86, 34, 212);
+h1 {
+  color: rgb(86, 34, 212);
+  font-size: 4em;
 }
 
 body {
-    /* background: linear-gradient(to bottom right, rgb(0, 0, 0) 0%, rgb(72, 68, 68) 59%, rgba(0,0,0,1) 100%); */
-    background-color: black;
+  background-color: black;
+}
 
+p{
+  font-size: 1.5em;
+  color: white;
+}
+
+h2{
+  color: white;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+form input, form textarea{
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #333;
+}
+
+form button{
+  padding: 15px;
+  border-color: white;
+  color: black;
+  border: 0;
+  outline:5px ;
+  width: 150px;
+  margin: 20px auto 0;
+  cursor: pointer;
+}
+
+.s1 div {
+  padding-left: 5%;
+}
+
+.s2 div {
+  padding-left: 5%;
+}
+
+.s3 div h1{
+  padding-left: 10%;
+}
+
+.s4 div {
+  padding-left: 5%;
+}
+
+.s5 div {
+  padding-left: 5%;
 }
