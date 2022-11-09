@@ -53,12 +53,32 @@ form button{
   color: white;
 }
 
+.links {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.links a{
+  text-decoration: none;
+}
+
+.links a:hover{
+  text-decoration: underline;
+  text-decoration-color: white ;
+}
+
+
 .slide img{
   width: 50%;
 }
 
 .s1 div {
-  padding-left: 5%;
+  display: flex;
+  flex-direction: row;
+  padding-left:5% ;
 }
 
 .s2 div {
