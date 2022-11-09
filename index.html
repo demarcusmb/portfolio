@@ -10,6 +10,7 @@
         integrity="sha512-c2/xySTiUmIa2PzQAnKZVYi2+aJmyaI6rweK5GCL1HbHx70/Zub0RhYPy5RFbJsStRo+HTForawyFBgBp6btJA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/main.css">
+    <script src="/js/script.js"></script>
 </head>
 
 <body>
@@ -49,8 +50,12 @@
                     <h2>Genshin Character Sheet</h2>
                     <br />
                     <div class="links">
-                            <a href="https://github.com/demarcusmb/genshin-character-stats"><h2>GitHub</h2></a>
-                            <a href="https://genshin-puller.netlify.app/"><h2>App</h2></a>
+                        <a href="https://github.com/demarcusmb/genshin-character-stats">
+                            <h2>GitHub</h2>
+                        </a>
+                        <a href="https://genshin-puller.netlify.app/">
+                            <h2>App</h2>
+                        </a>
                     </div>
                     <br />
                     <img src="/images/genshin.png" />
@@ -64,8 +69,12 @@
                     <h2>GameShop</h2>
                     <br />
                     <div class="links">
-                            <a href="https://github.com/demarcusmb/shop"><h2>GitHub</h2></a>
-                            <a href="https://gmeshop.herokuapp.com/"><h2>App</h2></a>
+                        <a href="https://github.com/demarcusmb/shop">
+                            <h2>GitHub</h2>
+                        </a>
+                        <a href="https://gmeshop.herokuapp.com/">
+                            <h2>App</h2>
+                        </a>
                     </div>
                     <br />
                     <img src="/images/shop.png">
@@ -78,8 +87,12 @@
                     <h2>VirtualMall</h2>
                     <br />
                     <div class="links">
-                            <a href="https://github.com/demarcusmb/Virtual-Mall-Frontend"><h2>GitHub</h2></a>
-                            <a href="https://virtualmallusa.netlify.app/"><h2>App</h2></a>
+                        <a href="https://github.com/demarcusmb/Virtual-Mall-Frontend">
+                            <h2>GitHub</h2>
+                        </a>
+                        <a href="https://virtualmallusa.netlify.app/">
+                            <h2>App</h2>
+                        </a>
                     </div>
                     <br />
                     <img src="/images/vmall.png">
@@ -92,8 +105,13 @@
                     <h2>EmployeeDisplay</h2>
                     <br />
                     <div class="links">
-                            <a href="https://github.com/demarcusmb/employeedisplay"><h2>GitHub</h2></a>
-                            <a href="https://www.google.com/url?q=https://employeedisplay.herokuapp.com/&sa=D&source=docs&ust=1667414246364343&usg=AOvVaw0wC2Og1YLDpaTZcsnnZxoE"><h2>App</h2></a>
+                        <a href="https://github.com/demarcusmb/employeedisplay">
+                            <h2>GitHub</h2>
+                        </a>
+                        <a
+                            href="https://www.google.com/url?q=https://employeedisplay.herokuapp.com/&sa=D&source=docs&ust=1667414246364343&usg=AOvVaw0wC2Og1YLDpaTZcsnnZxoE">
+                            <h2>App</h2>
+                        </a>
                     </div>
                     <br />
                     <img src="/images/employee.png">
@@ -106,8 +124,14 @@
         </div>
 
         <div class="section s4">
-            <div>
+            <div class="s4">
                 <h1> My Languages </h1>
+                <div class="lang">
+                    <img src="/images/java.webp">
+                    <img src="/images/javascript.png">
+                    <img src="/images/python.png">
+                </div>
+                
             </div>
 
         </div>
@@ -116,10 +140,9 @@
             <div>
                 <h1> Contact Information </h1>
                 <br />
-                <form onsubmit="sendEmail(); reset(); return false;"">
-                    <input type=" text" id="name" placeholder="Your Name" required>
-                    <input type="email" id="email" placeholder="Your Email" required>
-                    <input type="text" id="subject" placeholder="Subject" required>
+                <form onsubmit="sendMail(); reset(); return false;">
+                    <input type=" text" id="full=Name" placeholder="Your Name" required>
+                    <input type="email" id="email_id" placeholder="Your Email" required>
                     <textarea id="message" rows="4" placeholder="Message"></textarea>
                     <button type="submit">Send</button>
                 </form>
@@ -135,20 +158,14 @@
         new fullpage('#fullPage', {
         })
     </script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                SecureToken: "1a4dba55-24f9-4c80-8d1f-a9714a856655",
-                To: 'gamingacademy328@gmail.com',
-                From: document.getElementById("email").value,
-                Subject: document.getElementById("subject").value,
-                Body: document.getElementById("message").value
-            }).then(
-                message => alert(message)
-            );
-        }
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+            (function () {
+                emailjs.init('yrmtlOg1ASMnoOxkK');
+            })();
     </script>
+
+
 </body>
 
 </html>
