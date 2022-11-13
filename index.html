@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.12/fullpage.css"
         integrity="sha512-c2/xySTiUmIa2PzQAnKZVYi2+aJmyaI6rweK5GCL1HbHx70/Zub0RhYPy5RFbJsStRo+HTForawyFBgBp6btJA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
@@ -92,7 +92,7 @@
                             <h2>App</h2>
                         </a>
                     </div>
-                    <img src="/images/genshin.png" />
+                    <img src="/images/genshin.png" alt="Genshin Puller front page image">
                 </div>
                 <div class="slide">
                     <h2>GameShop</h2>
@@ -106,7 +106,7 @@
                             <h2>App</h2>
                         </a>
                     </div>
-                    <img src="/images/shop.png">
+                    <img src="/images/shop.png" alt="Game Shop front page image">
                 </div>
                 <div class="slide">
                     <h2>VirtualMall</h2>
@@ -120,22 +120,22 @@
                             <h2>App</h2>
                         </a>
                     </div>
-                    <img src="/images/vmall.png">
+                    <img src="/images/vmall.png" alt="Virtual Mall front page image">
                 </div>
                 <div class="slide">
-                    <h2>EmployeeDisplay</h2>
-                    <p>This app displays the different employees and different coding languages that they know</p>
+                    <h2>Task Manager</h2>
+                    <p>This app allows users to register and login to accounts and store tasks</p>
                     <br />
                     <div class="links">
-                        <a href="https://github.com/demarcusmb/employeedisplay" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/demarcusmb/task_manager" target="_blank" rel="noopener noreferrer">
                             <h2>GitHub</h2>
                         </a>
                         <a
-                            href="https://www.google.com/url?q=https://employeedisplay.herokuapp.com/&sa=D&source=docs&ust=1667414246364343&usg=AOvVaw0wC2Og1YLDpaTZcsnnZxoE" target="_blank" rel="noopener noreferrer">
+                            href="https://taskmanagerclientreact.netlify.app/" target="_blank" rel="noopener noreferrer">
                             <h2>App</h2>
                         </a>
                     </div>
-                    <img src="/images/employee.png">
+                    <img src="/images/task_manager.png" alt="Task Manager App Front Page">
                 </div>
             </div>
         </div>
@@ -144,16 +144,16 @@
             <div class="s4">
                 <h1> My Skills </h1>
                 <div class="lang">
-                    <img src="/images/java.webp">
-                    <img src="/images/javascript.png">
-                    <img src="/images/python.png">
-                    <img src="/images/react.png">
-                    <img src="/images/django.png">
-                    <img src="/images/mongo.webp">
-                    <img src="/images/html.png">
-                    <img src="/images/css.png">
-                    <img src="/images/nodejs.png">
-                    <img src="/images/jquery.png">
+                    <img src="/images/java.webp" alt="Java image" >
+                    <img src="/images/javascript.png" alt="Javascript image">
+                    <img src="/images/python.png" alt="Python image">
+                    <img src="/images/react.png" alt="React image">
+                    <img src="/images/django.png" alt="Django image">
+                    <img src="/images/mongo.webp" alt="Mongo image">
+                    <img src="/images/html.png" alt="Html image">
+                    <img src="/images/css.png" alt="Css image">
+                    <img src="/images/nodejs.png" alt="Nodejs image">
+                    <img src="/images/jquery.png" alt="Jquery image">
                 </div>
 
             </div>
@@ -164,11 +164,17 @@
             <div>
                 <h1> Contact Information </h1>
                 <br />
-                <form id="contact-form"">
+                <form id="contact-form">
                     <input type="hidden" name="contact_number">
-                    <input type=" text" name="from_name" placeholder="Your Name" required>
-                    <input type="email" name="email_id" placeholder="Your Email" required>
-                    <textarea name="message" rows="4" placeholder="Message"></textarea>
+                    <label>
+                        <input type="text" name="from_name" placeholder="Your Name" required />
+                    </label>
+                    <label>
+                        <input type="email" name="email_id" placeholder="Your Email" required />
+                    </label>
+                    <label>
+                        <textarea name="message" rows="4" placeholder="Message"></textarea>
+                    </label>
                     <button type="submit">Send</button>
                 </form>
             </div>
