@@ -35,20 +35,21 @@
 </head>
 
 <body>
-    
+<div class="header">
+    <div class="logo"><a href="/resume/resume.pdf" download="resume.pdf">Download Resume</a></div>
+    <div class="nav">
+        <ul class="nav_links">
+            <li><a href="https://www.linkedin.com/in/demarcus-brown-9090a3243/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/demarcusmb" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+    </div>
+</div>
+
     <div id="fullPage">
 
-        <div class="section s1" id="s1">
-            <div class="header">
-                <div class="logo"><a href="/resume/resume.pdf" download="resume.pdf">Download Resume</a></div>
-                <div class="nav">
-                    <ul class="nav_links">
-                        <li><a href="https://www.linkedin.com/in/demarcus-brown-9090a3243/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                        <li><a href="https://github.com/demarcusmb" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                    </ul>
-                </div>
-            </div>
 
+
+        <div class="section s1" id="s1">
             <div>
                 <h1>
                     Hello I'm
@@ -162,25 +163,25 @@
 
         </div>
 
-        <div class="section s5" id="s5">
-            <div>
-                <h1> Contact Information </h1>
-                <br />
-                <form id="contact-form">
-                    <input type="hidden" name="contact_number">
-                    <label>
-                        <input type="text" name="from_name" placeholder="Your Name" required />
-                    </label>
-                    <label>
-                        <input type="email" name="email_id" placeholder="Your Email" required />
-                    </label>
-                    <label>
-                        <textarea name="message" rows="4" placeholder="Message"></textarea>
-                    </label>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-        </div>
+<!--        <div class="section s5" id="s5">-->
+<!--            <div>-->
+<!--                <h1> Contact Information </h1>-->
+<!--                <br />-->
+<!--                <form id="contact-form">-->
+<!--                    <input type="hidden" name="contact_number">-->
+<!--                    <label>-->
+<!--                        <input type="text" name="from_name" placeholder="Your Name" required />-->
+<!--                    </label>-->
+<!--                    <label>-->
+<!--                        <input type="email" name="email_id" placeholder="Your Email" required />-->
+<!--                    </label>-->
+<!--                    <label>-->
+<!--                        <textarea name="message" rows="4" placeholder="Message"></textarea>-->
+<!--                    </label>-->
+<!--                    <button type="submit">Send</button>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--        </div>-->
 
     </div>
 
@@ -189,6 +190,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         new fullpage('#fullPage', {
+            paddingTop:"100px"
         })
     </script>
 
